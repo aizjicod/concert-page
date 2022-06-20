@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --dark-color : #272a31;
+  --orange-color : #ec5242;
+  --grey-color : #d3d3d3;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mobile-v {
+  display: block;
+}
+
+.desktop-v {
+  display: none;
+}
+
+header {
+  width: 90%;
+  padding-top: 24px;
+}
+header.active {
+  width: 90%;
+  padding-top: 24px;
+}
+
+.home-section {
+  background: url(../img/mobile_index_bg.png) no-repeat top;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-bottom: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-wrapper {
+  width: 90%;
+  padding-top: 24px;
+}
+
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.burger-btn .bar {
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: var(--dark-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-btn.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #67798e;
+}
+
+.burger-btn.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #67798e;
+}
+
+.home-h1 {
+  color: var(--orange-color);
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.home-p {
+  border: 4px solid #fff;
+  background: #f7f7f8;
+  padding: 1em 0.5em;
+  margin-bottom: 40px;
+  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: justify;
+}
+
+.home-h2 {
+  font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.program-section {
+  background: url(../img/pattern_pgram_bg.png) repeat #272a31;
+  width: 100%;
+  height: auto;
+  padding-bottom: 65px;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 80px;
+}
+
+.program-wrapper {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title-h2 {
+  width: 100%;
+  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.line-h2 {
+  width: 60px;
+  border-bottom: 2px var(--orange-color) solid;
+  margin-bottom: 25px;
+}
+
+.pm-list {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.pm-ul-items {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 0.5em;
+  list-style: none;
+  width: 100%;
+  padding: 1em 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pm-ul-items h3{
+ width: 24%;
+ color: var(--orange-color);
+ font-weight: 900;
+}
+
+.pm-ul-items p{
+  color: #fff;
+}
+
+.pm-btn {
+  width: 70%;
+  padding: 1.5em 1em;
+  background: var(--orange-color);
+  color: #Fff;
+  border: none;
+  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+}
+
+.artist-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.artist-wrapper {
+  width: 90%;
+  padding: 80px 0 2000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.artist-wrapper .title-h2 {
+  color:var(--dark-color);
+}
+
+.card-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.card-artist {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-artist img:first-child {
+  width: 180px;
+}
+
+.card-artist img:nth-child(2) {
+  width: 100px;
+  position: absolute;
+  left: 10%;
+  z-index: -1;
+}
+
+.card-content {
+  width: 40%;
+}
+
+.card-content h2 {
+  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.btn-artist {
+  width: 100%;
+  background: inherit;
+  border: 2px solid var(--grey-color);
+  padding: 1em 0.5em;
+}
+
+.invisible {
+  display: none;
+}

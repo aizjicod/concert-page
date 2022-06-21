@@ -227,12 +227,14 @@ text-align: center;
   filter: blur(8px);
   mix-blend-mode:darken;
 }
+
 .logo h2{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   filter: blur(0);
   color: #fff;
+  text-align: center;
   font-weight: 900;
   border: 4px solid var(--orange-color);
   padding: 0.5em 0.3em;

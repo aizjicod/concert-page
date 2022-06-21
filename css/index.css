@@ -11,6 +11,11 @@
   --grey-color : #d3d3d3;
 }
 
+
+.mobile-v {
+  display: block;
+}
+
 main {
   width: 100vw;
   display: flex;
@@ -18,20 +23,12 @@ main {
   flex-wrap: wrap;
 }
 
-.mobile-v {
-  display: block;
-}
-
-.desktop-v {
-  display: none;
-}
-
 header {
   display: block;
   position: absolute;
   width: 100vw;
   top: -1500px;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 header.active {
   position: absolute;
@@ -289,14 +286,45 @@ header.active {
   padding: 1em 0.5em;
 }
 
+.patrons-section {
+  width: 100%;
+  height: auto;
+  padding:40px 0;
+  display: flex;
+  justify-content: center;
+  background: var(--dark-color);
+}
+
+.patrons-wrapper {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.patrons-wrapper .title-h2 {
+  color: #fff;
+}
+
+.patrons-icons {
+  display:flex; 
+  justify-content: center;
+}
+
+.patrons-icons img{
+  width: calc(100%/5.5);
+}
+
 .invisible {
   display: none;
 }
 
+.desktop-v {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  .mobile-v {
-    display: none;
-  }
 
   .desktop-v {
     display: block;
@@ -427,5 +455,13 @@ header.active {
 
   .card-content h2 {
     width: 100%;
+  }
+
+  .patrons-section {
+    display: flex;
+  }
+
+  .mobile-v {
+    display: none;
   }
 }

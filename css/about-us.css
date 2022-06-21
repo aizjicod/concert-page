@@ -299,6 +299,15 @@ text-align: center;
   color: #fff;
 }
 
+.patrons-icons img{
+  width: 32.333%;
+}
+
+.patrons-icons:last-of-type {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-v {
     display: none;

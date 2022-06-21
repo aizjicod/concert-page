@@ -120,6 +120,7 @@ header.active {
   background-image: url('../img/past-concert-02.jpg');
   background-size: cover;
   background-position: left;
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

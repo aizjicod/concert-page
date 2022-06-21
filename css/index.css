@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
 }
 
 :root {
@@ -28,12 +27,43 @@ main {
 }
 
 header {
-  width: 90%;
-  padding-top: 24px;
+  display: block;
+  position: absolute;
+  width: 100vw;
+  top: -1500px;
+  transition: all 1s;
 }
 header.active {
-  width: 90%;
+  position: absolute;
+  top: 50px;
   padding-top: 24px;
+}
+
+.navbar.mobile-v {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+}
+
+.navbar.mobile-v ul{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.navbar.mobile-v ul a{
+  border-bottom: 3px solid var(--grey-color);
+  padding-bottom: 15px;
+  color: var(--orange-color);
+  text-decoration: none;
+  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.navbar.mobile-v ul a:hover > li{
+  transform: scale(1.1) translateX(15px);
 }
 
 .home-section {
@@ -73,13 +103,11 @@ header.active {
 }
 
 .burger-btn.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-  background-color: #67798e;
+  transform: translateY(16px) rotate(45deg);
 }
 
 .burger-btn.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-  background-color: #67798e;
+  transform: translateY(-16px) rotate(-45deg);
 }
 
 .home-h1 {

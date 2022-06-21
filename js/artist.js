@@ -76,7 +76,7 @@ const createCard = (artist) => {
   // create content container
   const divContainer = document.createElement('div');
   divContainer.classList.add('card-content');
-  
+
   // name of artist
   const name = document.createElement('h2');
   name.classList.add('content-h2');

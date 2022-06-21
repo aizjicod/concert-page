@@ -41,14 +41,13 @@ header.active {
   background-size: cover;
   width: 100%;
   height: auto;
-  padding-bottom: 65px;
+  padding: 24px 0 65px;
   display: flex;
   justify-content: center;
 }
 
 .home-wrapper {
   width: 90%;
-  padding-top: 24px;
 }
 
 .burger-btn {
@@ -84,9 +83,17 @@ header.active {
 }
 
 .home-h1 {
+  font-size: 40px;
   color: var(--orange-color);
   font-weight: 900;
   margin-bottom: 30px;
+  background-image: url('../img/past-concert-02.jpg');
+  background-size: cover;
+  background-position: left;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .home-p {
@@ -109,11 +116,12 @@ header.active {
   text-align: center;
 }
 
+/* end of home section start of program section */
+
 .program-section {
   background: url(../img/pattern_pgram_bg.png) repeat #272a31;
   width: 100%;
   height: auto;
-  padding-bottom: 65px;
   display: flex;
   justify-content: center;
   padding: 25px 0 80px;
@@ -255,4 +263,127 @@ header.active {
 
 .invisible {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-v {
+    display: none;
+  }
+
+  .desktop-v {
+    display: block;
+  }
+
+  header {
+    width: 80%;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar.desktop-v {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .navbar.desktop-v ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar.desktop-v a {
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .navbar.desktop-v a:hover {
+    color: var(--orange-color);
+    transform: scale(1.1);
+    margin: 0 5px;
+  }
+
+  .campain {
+    border: 2px solid var(--orange-color);
+    padding: 0.3em 0.2em;
+  }
+
+  .home-section {
+    background-image: url(../img/desktop-version/index_bg.png);
+    padding-top: 140px;
+  }
+
+  .home-wrapper {
+    width: 75%;
+  }
+
+  .home-p {
+    width: 60%;
+  }
+
+  .home-h2 {
+    text-align: start;
+    font-size: 1.5em;
+  }
+
+  /* end of home-section 
+  start of program section */
+
+  .program-section {
+    padding-top: 40px;
+  }
+
+  .pm-list {
+    display: flex;
+    gap: 15px;
+  }
+
+  .pm-ul-items {
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid transparent;
+    gap:0;
+    transition: all 0.3s;
+  }
+
+  .pm-ul-items:hover {
+    border: 3px solid var(--grey-color);
+  }
+
+  .pm-ul-items h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pm-ul-items p {
+    text-align: center;
+  }
+
+  .pm-a {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 900;
+  }
+
+  /* end of program section 
+  start of artist */
+
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-artist:nth-child(odd) img:nth-child(2) {
+    left: 7%;
+  }
+
+  .card-artist:nth-child(even) img:nth-child(2) {
+    left: 54%;
+  }
+
+  .card-content h2 {
+    width: 100%;
+  }
 }

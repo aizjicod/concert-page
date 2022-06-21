@@ -6,9 +6,9 @@
 }
 
 :root {
-  --dark-color : #272A31;
-  --orange-color : #EC5242;
-  --grey-color : #D3D3D3;
+  --dark-color: #272a31;
+  --orange-color: #ec5242;
+  --grey-color: #d3d3d3;
 }
 
 .mobile-v {
@@ -33,6 +33,7 @@ header {
   top: -1500px;
   transition: all 1s;
 }
+
 header.active {
   position: absolute;
   top: 50px;
@@ -42,19 +43,21 @@ header.active {
 .logo-header {
   width: 130px;
 }
+
 .logo-header #logo {
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo-header #logo img{
+.logo-header #logo img {
   width: 100%;
   filter: blur(8px);
-  mix-blend-mode:darken;
+  mix-blend-mode: darken;
 }
- .logo-header #logo h2{
+
+.logo-header #logo h2 {
   width: 8%;
   position: absolute;
   left: 11%;
@@ -64,8 +67,8 @@ header.active {
   color: #fff;
   font-weight: 900;
   border: 4px solid var(--orange-color);
-  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color),0 0 20px var(--orange-color);
-  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color)
+  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color), 0 0 20px var(--orange-color);
+  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color);
 }
 
 .navbar.mobile-v {
@@ -74,14 +77,14 @@ header.active {
   height: 100vh;
 }
 
-.navbar.mobile-v ul{
+.navbar.mobile-v ul {
   list-style: none;
   display: flex;
   gap: 25px;
   flex-direction: column;
 }
 
-.navbar.mobile-v ul a{
+.navbar.mobile-v ul a {
   border-bottom: 3px solid var(--grey-color);
   padding-bottom: 15px;
   color: var(--orange-color);
@@ -91,7 +94,7 @@ header.active {
   font-weight: 900;
 }
 
-.navbar.mobile-v ul a:hover > li{
+.navbar.mobile-v ul a:hover > li {
   transform: scale(1.1) translateX(15px);
 }
 
@@ -111,13 +114,12 @@ header.active {
 }
 
 .home-h1 {
-  font-size:40px;
+  font-size: 40px;
   font-weight: 900;
   margin-bottom: 30px;
   background-image: url('../img/past-concert-02.jpg');
   background-size: cover;
   background-position: left;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -140,7 +142,7 @@ header.active {
   font-weight: 900;
   line-height: 19.5px;
   text-align: justify;
-  color:var(--dark-color);
+  color: var(--dark-color);
 }
 
 .info-p b {
@@ -178,11 +180,10 @@ header.active {
   transform: translateY(-16px) rotate(-45deg);
 }
 
-
 .purpose-section {
   width: 100%;
   height: auto;
-  padding:20px 0 40px;
+  padding: 20px 0 40px;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid var(--grey-color);
@@ -211,24 +212,25 @@ header.active {
   border-bottom: 2px var(--orange-color) solid;
 }
 
-.purpose-wrapper p{
-width: 100%;
-text-align: center;
+.purpose-wrapper p {
+  width: 100%;
+  text-align: center;
 }
+
 .logo {
   width: 80%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo img{
+.logo-img {
   width: 100%;
   filter: blur(8px);
-  mix-blend-mode:darken;
+  mix-blend-mode: darken;
 }
 
-.logo h2{
+.logo-h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -238,14 +240,14 @@ text-align: center;
   font-weight: 900;
   border: 4px solid var(--orange-color);
   padding: 0.5em 0.3em;
-  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color),0 0 20px var(--orange-color);
-  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color)
+  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color), 0 0 20px var(--orange-color);
+  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color);
 }
 
 .pastConcerts-section {
   width: 100%;
   height: auto;
-  padding:40px 0 60px;
+  padding: 40px 0 60px;
   display: flex;
   justify-content: center;
 }
@@ -262,29 +264,31 @@ text-align: center;
   width: 100%;
   text-align: center;
 }
+
 .concerts {
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.concerts a {
+.concerts-a {
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.concerts a img{
+.concerts-img {
   max-width: 90%;
   max-height: 100%;
   background-color: var(--dark-color);
-  mix-blend-mode:multiply;
+  mix-blend-mode: multiply;
 }
-.concerts a h2{
+
+.concerts-h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -293,14 +297,14 @@ text-align: center;
   font-weight: 900;
   border: 4px solid var(--orange-color);
   padding: 0.5em 0;
-  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color),0 0 20px var(--orange-color);
-  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color)
+  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color), 0 0 20px var(--orange-color);
+  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color);
 }
 
 .patrons-section {
   width: 100%;
   height: auto;
-  padding:40px 0;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   background: var(--dark-color);
@@ -318,10 +322,11 @@ text-align: center;
   color: #fff;
 }
 
-.patrons-icons{
+.patrons-icons {
   width: 100%;
 }
-.patrons-icons img{
+
+.patrons-img {
   width: 32.333%;
 }
 
@@ -334,7 +339,7 @@ text-align: center;
   .mobile-v {
     display: none;
   }
-  
+
   .desktop-v {
     display: block;
   }
@@ -360,7 +365,7 @@ text-align: center;
     display: flex;
     gap: 10px;
   }
-  
+
   .navbar.desktop-v a {
     color: var(--dark-color);
     text-decoration: none;
@@ -391,7 +396,7 @@ text-align: center;
   .concerts {
     width: 45%;
   }
-  
+
   .concerts:first-of-type a h2 {
     left: 28.5%;
     width: 30%;
@@ -404,5 +409,4 @@ text-align: center;
   /* .patrons-wrapper {
     width: 90%;
   } */
-
 }

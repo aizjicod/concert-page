@@ -6,11 +6,10 @@
 }
 
 :root {
-  --dark-color : #272a31;
-  --orange-color : #ec5242;
-  --grey-color : #d3d3d3;
+  --dark-color: #272a31;
+  --orange-color: #ec5242;
+  --grey-color: #d3d3d3;
 }
-
 
 .mobile-v {
   display: block;
@@ -30,6 +29,7 @@ header {
   top: -1500px;
   transition: all 0.7s;
 }
+
 header.active {
   position: absolute;
   top: 50px;
@@ -39,31 +39,6 @@ header.active {
 .logo-header {
   width: 130px;
 }
-#logo {
-  width: 100%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#logo img{
-  width: 100%;
-  filter: blur(8px);
-  mix-blend-mode:darken;
-}
-#logo h2{
-  width: 8%;
-  position: absolute;
-  left: 11%;
-  font-size: 16px;
-  text-align: center;
-  filter: blur(0);
-  color: #fff;
-  font-weight: 900;
-  border: 4px solid var(--orange-color);
-  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color),0 0 20px var(--orange-color);
-  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color)
-}
 
 .navbar.mobile-v {
   padding: 40px;
@@ -71,14 +46,14 @@ header.active {
   height: 100vh;
 }
 
-.navbar.mobile-v ul{
+.navbar.mobile-v ul {
   list-style: none;
   display: flex;
   gap: 25px;
   flex-direction: column;
 }
 
-.navbar.mobile-v ul a{
+.navbar.mobile-v ul a {
   border-bottom: 3px solid var(--grey-color);
   padding-bottom: 15px;
   color: var(--orange-color);
@@ -88,7 +63,7 @@ header.active {
   font-weight: 900;
 }
 
-.navbar.mobile-v ul a:hover > li{
+.navbar.mobile-v ul a:hover > li {
   transform: scale(1.1) translateX(15px);
 }
 
@@ -147,10 +122,8 @@ start of home section */
   background-image: url('../img/past-concert-02.jpg');
   background-size: cover;
   background-position: left;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .home-p {
@@ -173,7 +146,7 @@ start of home section */
   text-align: center;
 }
 
-/* end of home section 
+/* end of home section
 start of program section */
 
 .program-section {
@@ -225,13 +198,13 @@ start of program section */
   gap: 15px;
 }
 
-.pm-ul-items h3{
- width: 24%;
- color: var(--orange-color);
- font-weight: 900;
+.pm-ul-items h3 {
+  width: 24%;
+  color: var(--orange-color);
+  font-weight: 900;
 }
 
-.pm-ul-items p{
+.pm-ul-items p {
   color: #fff;
 }
 
@@ -239,7 +212,7 @@ start of program section */
   width: 70%;
   padding: 1em 0.5em;
   background: var(--orange-color);
-  color: #Fff;
+  color: #fff;
   border: none;
   font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
@@ -261,7 +234,7 @@ start of program section */
 }
 
 .artist-wrapper .title-h2 {
-  color:var(--dark-color);
+  color: var(--dark-color);
 }
 
 .card-wrapper {
@@ -296,10 +269,10 @@ start of program section */
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  gap:5px;
+  gap: 5px;
 }
 
-.card-content h2 {
+.card-content .content-h2 {
   font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 400;
@@ -322,7 +295,7 @@ start of program section */
 .patrons-section {
   width: 100%;
   height: auto;
-  padding:40px 0;
+  padding: 40px 0;
   display: flex;
   justify-content: center;
   background: var(--dark-color);
@@ -341,12 +314,39 @@ start of program section */
 }
 
 .patrons-icons {
-  display:flex; 
+  display: flex;
   justify-content: center;
 }
 
-.patrons-icons img{
-  width: calc(100%/5.5);
+.patrons-img {
+  width: calc(100% / 5.5);
+}
+
+#logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo img {
+  width: 100%;
+  filter: blur(8px);
+  mix-blend-mode: darken;
+}
+
+#logo h2 {
+  width: 8%;
+  position: absolute;
+  left: 11%;
+  font-size: 16px;
+  text-align: center;
+  filter: blur(0);
+  color: #fff;
+  font-weight: 900;
+  border: 4px solid var(--orange-color);
+  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color), 0 0 20px var(--orange-color);
+  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color);
 }
 
 .invisible {
@@ -358,7 +358,6 @@ start of program section */
 }
 
 @media screen and (min-width: 768px) {
-
   .desktop-v {
     display: block;
   }
@@ -372,7 +371,7 @@ start of program section */
     align-items: center;
     transition: none;
   }
-  
+
   .logo-header {
     text-decoration: none;
     color: var(--dark-color);
@@ -390,7 +389,7 @@ start of program section */
     display: flex;
     gap: 10px;
   }
-  
+
   .navbar.desktop-v a {
     color: var(--dark-color);
     text-decoration: none;
@@ -426,7 +425,7 @@ start of program section */
     font-size: 1.5em;
   }
 
-  /* end of home-section 
+  /* end of home-section
   start of program section */
 
   .program-section {
@@ -442,7 +441,7 @@ start of program section */
     flex-wrap: wrap;
     justify-content: center;
     border: 3px solid transparent;
-    gap:0;
+    gap: 0;
     transition: all 0.3s;
   }
 
@@ -465,7 +464,7 @@ start of program section */
     font-weight: 900;
   }
 
-  /* end of program section 
+  /* end of program section
   start of artist */
 
   .card-wrapper {

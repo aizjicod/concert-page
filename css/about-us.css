@@ -193,6 +193,10 @@ text-align: center;
   justify-content: center;
 }
 
+.pastConcerts-wrapper p {
+  width: 100%;
+  text-align: center;
+}
 .concerts {
   width: 100%;
   display:flex;
@@ -247,4 +251,75 @@ text-align: center;
 
 .patrons-wrapper .title-h2 {
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-v {
+    display: none;
+  }
+  
+  .desktop-v {
+    display: block;
+  }
+
+  header {
+    width: 80%;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar.desktop-v {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .navbar.desktop-v ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar.desktop-v a {
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .navbar.desktop-v a:hover {
+    color: var(--orange-color);
+    transform: scale(1.1);
+    margin: 0 5px;
+  }
+
+  .campain {
+    border: 2px solid var(--orange-color);
+    padding: 0.3em 0.2em;
+  }
+
+  .home-wrapper {
+    width: 70%;
+  }
+
+  .home-h1,
+  .home-p,
+  .info-p {
+    text-align: center;
+  }
+
+  .concerts {
+    width: 45%;
+  }
+  
+  .concerts:first-of-type a h2 {
+    left: 28.5%;
+    width: 30%;
+  }
+
+  .concerts:last-child a h2 {
+    left: 71.5%;
+  }
+
 }

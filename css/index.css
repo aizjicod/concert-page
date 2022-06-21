@@ -303,11 +303,25 @@ header.active {
   }
 
   header {
+    position: static;
     width: 80%;
     padding: 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: none;
+  }
+  
+  .logo-header {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 0.3s;
+    font-weight: 900;
+  }
+  
+  .logo-header:hover {
+    color: var(--orange-color);
+    transform:scale(1.1);
   }
 
   .navbar.desktop-v {

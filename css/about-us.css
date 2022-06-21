@@ -318,6 +318,9 @@ text-align: center;
   color: #fff;
 }
 
+.patrons-icons{
+  width: 100%;
+}
 .patrons-icons img{
   width: 32.333%;
 }
@@ -397,5 +400,9 @@ text-align: center;
   .concerts:last-child a h2 {
     left: 71.5%;
   }
+
+  /* .patrons-wrapper {
+    width: 90%;
+  } */
 
 }

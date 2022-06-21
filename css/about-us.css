@@ -47,9 +47,15 @@ header {
 }
 
 .home-h1 {
-  color: var(--orange-color);
+  font-size:40px;
   font-weight: 900;
   margin-bottom: 30px;
+  background-image: url('../img/past-concert-02.jpg');
+  background-size: cover;
+  background-position: left;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home-p {
@@ -142,29 +148,31 @@ header {
   border-bottom: 2px var(--orange-color) solid;
 }
 
+.purpose-wrapper p{
+width: 100%;
+text-align: center;
+}
 .purpose-logo {
-  width: 100%;
-  height: 200px;
+  width: 80%;
   display:flex;
   justify-content: center;
   align-items: center;
 }
 
 .purpose-logo img{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 90%;
-  max-height: 100%;
+  width: 100%;
   filter: blur(8px);
   mix-blend-mode:darken;
 }
 .purpose-logo h2{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   filter: blur(0);
   color: #fff;
   font-weight: 900;
   border: 4px solid var(--orange-color);
-  padding: 1.5em 1em;
+  padding: 0.5em 0.3em;
   box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color),0 0 20px var(--orange-color);
   text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color)
 }
@@ -187,7 +195,6 @@ header {
 
 .concerts {
   width: 100%;
-  height: 200px;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -203,20 +210,20 @@ header {
 }
 
 .concerts a img{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   max-width: 90%;
   max-height: 100%;
   background-color: var(--dark-color);
   mix-blend-mode:multiply;
 }
 .concerts a h2{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   filter: blur(0);
   color: #fff;
   font-weight: 900;
   border: 4px solid var(--orange-color);
-  padding: 1em 0;
+  padding: 0.5em 0;
   box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color),0 0 20px var(--orange-color);
   text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color)
 }

@@ -1,6 +1,6 @@
 # concert page
 
-> on this project i will be doing concert page.
+> on this project i will be doing concert page which will be done with a template made by Cindy Shin.
 
 
 ## Built With
@@ -49,6 +49,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - thanks a lot for microverse since this README file was a template from them, and also for letting me use the template for the mobile skeleton of the portfolio.
+-this is an Original design idea by [Cindy Shin in Behance.](https://www.behance.net/adagio07)
 
 ## 📝 License
 

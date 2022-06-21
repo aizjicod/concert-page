@@ -171,7 +171,7 @@ header.active {
 
 .pm-btn {
   width: 70%;
-  padding: 1.5em 1em;
+  padding: 1em 0.5em;
   background: var(--orange-color);
   color: #Fff;
   border: none;
@@ -188,7 +188,7 @@ header.active {
 
 .artist-wrapper {
   width: 90%;
-  padding: 80px 0 2000px;
+  padding: 80px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -210,11 +210,13 @@ header.active {
 .card-artist {
   width: 100%;
   display: flex;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .card-artist img:first-child {
-  width: 180px;
+  width: 140px;
+  height: 140px;
 }
 
 .card-artist img:nth-child(2) {
@@ -225,14 +227,23 @@ header.active {
 }
 
 .card-content {
-  width: 40%;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap:5px;
 }
 
 .card-content h2 {
   font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 400;
-  margin-bottom: 30px;
+}
+
+.card-content h3 {
+  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--orange-color);
 }
 
 .btn-artist {

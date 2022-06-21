@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --dark-color : #272A31;
+  --orange-color : #EC5242;
+  --grey-color : #D3D3D3;
+}
+
+.mobile-v {
+  display: block;
+}
+
+.desktop-v {
+  display: none;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+}
+
+.home-section {
+  background: url(../img/about_bg_01.png) no-repeat 100% 20% #f7f7f8;
+  background-size: contain;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  padding: 20px 0 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-wrapper {
+  width: 90%;
+}
+
+.home-h1 {
+  color: var(--orange-color);
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.home-p {
+  border: 4px solid #fff;
+  background: #fff;
+  padding: 1em 0.5em;
+  margin-bottom: 40px;
+  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: justify;
+}
+
+.info-p {
+  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+  line-height: 19.5px;
+  text-align: justify;
+  color:var(--dark-color);
+}
+
+.info-p b {
+  color: var(--orange-color);
+  font-weight: 900;
+}
+
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.burger-btn .bar {
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: var(--dark-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-btn.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #67798e;
+}
+
+.burger-btn.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #67798e;
+}
+
+.purpose-section {
+  width: 100%;
+  height: auto;
+  padding:20px 0 40px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--grey-color);
+}
+
+.purpose-wrapper {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.title-h2 {
+  min-width: 100%;
+  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.line-h2 {
+  width: 60px;
+  border-bottom: 2px var(--orange-color) solid;
+}
+
+.purpose-logo {
+  width: 100%;
+  height: 200px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purpose-logo img{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  max-height: 100%;
+  filter: blur(8px);
+  mix-blend-mode:darken;
+}
+.purpose-logo h2{
+  filter: blur(0);
+  color: #fff;
+  font-weight: 900;
+  border: 4px solid var(--orange-color);
+  padding: 1.5em 1em;
+  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color),0 0 20px var(--orange-color);
+  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color)
+}
+
+.pastConcerts-section {
+  width: 100%;
+  height: auto;
+  padding:40px 0 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.pastConcerts-wrapper {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.concerts {
+  width: 100%;
+  height: 200px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.concerts a {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.concerts a img{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  max-height: 100%;
+  background-color: var(--dark-color);
+  mix-blend-mode:multiply;
+}
+.concerts a h2{
+  filter: blur(0);
+  color: #fff;
+  font-weight: 900;
+  border: 4px solid var(--orange-color);
+  padding: 1em 0;
+  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color),0 0 20px var(--orange-color);
+  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color)
+}
+
+.patrons-section {
+  width: 100%;
+  height: auto;
+  padding:40px 0;
+  display: flex;
+  justify-content: center;
+  background: var(--dark-color);
+}
+
+.patrons-wrapper {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.patrons-wrapper .title-h2 {
+  color: #fff;
+}

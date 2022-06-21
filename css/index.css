@@ -36,6 +36,35 @@ header.active {
   padding-top: 24px;
 }
 
+.logo-header {
+  width: 130px;
+}
+#logo {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo img{
+  width: 100%;
+  filter: blur(8px);
+  mix-blend-mode:darken;
+}
+#logo h2{
+  width: 8%;
+  position: absolute;
+  left: 11%;
+  font-size: 16px;
+  text-align: center;
+  filter: blur(0);
+  color: #fff;
+  font-weight: 900;
+  border: 4px solid var(--orange-color);
+  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color),0 0 20px var(--orange-color);
+  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color)
+}
+
 .navbar.mobile-v {
   padding: 40px;
   background: rgba(255, 255, 255, 0.9);
@@ -62,6 +91,9 @@ header.active {
 .navbar.mobile-v ul a:hover > li{
   transform: scale(1.1) translateX(15px);
 }
+
+/* end of header
+start of home section */
 
 .home-section {
   background: url(../img/mobile_index_bg.png) no-repeat top;
@@ -141,7 +173,8 @@ header.active {
   text-align: center;
 }
 
-/* end of home section start of program section */
+/* end of home section 
+start of program section */
 
 .program-section {
   background: url(../img/pattern_pgram_bg.png) repeat #272a31;
@@ -188,7 +221,7 @@ header.active {
   width: 100%;
   padding: 1em 0.5em;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
 }
 
@@ -343,13 +376,7 @@ header.active {
   .logo-header {
     text-decoration: none;
     color: var(--dark-color);
-    transition: all 0.3s;
     font-weight: 900;
-  }
-  
-  .logo-header:hover {
-    color: var(--orange-color);
-    transform:scale(1.1);
   }
 
   .navbar.desktop-v {

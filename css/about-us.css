@@ -40,15 +40,32 @@ header.active {
 }
 
 .logo-header {
-  text-decoration: none;
-  color: var(--dark-color);
-  transition: all 0.3s;
-  font-weight: 900;
+  width: 130px;
+}
+.logo-header #logo {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo-header:hover {
-  color: var(--orange-color);
-  transform:scale(1.1);
+.logo-header #logo img{
+  width: 100%;
+  filter: blur(8px);
+  mix-blend-mode:darken;
+}
+ .logo-header #logo h2{
+  width: 8%;
+  position: absolute;
+  left: 11%;
+  font-size: 16px;
+  text-align: center;
+  filter: blur(0);
+  color: #fff;
+  font-weight: 900;
+  border: 4px solid var(--orange-color);
+  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color),0 0 20px var(--orange-color);
+  text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color)
 }
 
 .navbar.mobile-v {
@@ -198,19 +215,19 @@ header.active {
 width: 100%;
 text-align: center;
 }
-.purpose-logo {
+.logo {
   width: 80%;
   display:flex;
   justify-content: center;
   align-items: center;
 }
 
-.purpose-logo img{
+.logo img{
   width: 100%;
   filter: blur(8px);
   mix-blend-mode:darken;
 }
-.purpose-logo h2{
+.logo h2{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

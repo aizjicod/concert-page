@@ -48,8 +48,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- thanks a lot for microverse since this README file was a template from them, and also for letting me use the template for the mobile skeleton of the portfolio.
--this is an Original design idea by [Cindy Shin in Behance.](https://www.behance.net/adagio07)
+- thanks a lot for microverse since this README file was a template from them.
+- and thanks to [Cindy Shin in Behance.](https://www.behance.net/adagio07) since this is an Original design idea.
 
 ## 📝 License
 

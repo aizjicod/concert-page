@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: cocogoose, lato, sans-serif;
 }
 
 :root {
@@ -58,7 +58,6 @@ header.active {
   padding-bottom: 15px;
   color: var(--orange-color);
   text-decoration: none;
-  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 2em;
   font-weight: 900;
 }
@@ -132,7 +131,6 @@ start of home section */
   background: #f7f7f8;
   padding: 1em 0.5em;
   margin-bottom: 40px;
-  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: 400;
   line-height: 19.5px;
@@ -140,7 +138,6 @@ start of home section */
 }
 
 .home-h2 {
-  font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 900;
   line-height: 1.5em;
@@ -168,9 +165,8 @@ start of program section */
 
 .title-h2 {
   width: 100%;
-  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: normal;
   text-align: center;
   color: #fff;
@@ -215,7 +211,6 @@ start of program section */
   background: var(--orange-color);
   color: #fff;
   border: none;
-  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
 
@@ -274,13 +269,11 @@ start of program section */
 }
 
 .card-content .content-h2 {
-  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 400;
 }
 
 .card-content h3 {
-  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: 700;
   color: var(--orange-color);
@@ -332,7 +325,7 @@ start of program section */
 #logo h2 {
   width: 8%;
   position: absolute;
-  left: 11%;
+  left: 17%;
   font-size: 16px;
   text-align: center;
   filter: blur(0);
@@ -358,12 +351,35 @@ start of program section */
 
   header {
     position: static;
-    width: 80%;
-    padding: 24px 0;
+    width: 100%;
+    padding: 0 0 24px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     transition: none;
+  }
+
+  #media {
+    width: 100%;
+    background: var(--dark-color);
+    padding: 12px 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .media-ul {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .media-a {
+    color: #fff;
+    text-decoration: none;
   }
 
   .logo-header {
@@ -403,7 +419,7 @@ start of program section */
 
   .home-section {
     background-image: url(../img/desktop-version/index_bg.png);
-    padding-top: 140px;
+    padding-top: 40px;
   }
 
   .home-wrapper {
@@ -412,6 +428,11 @@ start of program section */
 
   .home-p {
     width: 60%;
+  }
+
+  .home-h1 {
+    width: 80%;
+    font-size: 4em;
   }
 
   .home-h2 {

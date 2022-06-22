@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: cocogoose, lato, sans-serif;
 }
 
 :root {
@@ -37,7 +37,6 @@ header {
 header.active {
   position: absolute;
   top: 50px;
-  padding-top: 24px;
 }
 
 .logo-header {
@@ -60,7 +59,7 @@ header.active {
 .logo-header #logo h2 {
   width: 8%;
   position: absolute;
-  left: 11%;
+  left: 17%;
   font-size: 16px;
   text-align: center;
   filter: blur(0);
@@ -89,7 +88,6 @@ header.active {
   padding-bottom: 15px;
   color: var(--orange-color);
   text-decoration: none;
-  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 2em;
   font-weight: 900;
 }
@@ -101,7 +99,6 @@ header.active {
 .home-section {
   background: url(../img/about_bg_01.png) no-repeat 100% 20% #f7f7f8;
   background-size: contain;
-  overflow: auto;
   width: 100%;
   height: auto;
   padding: 20px 0 65px;
@@ -130,7 +127,6 @@ header.active {
   background: #fff;
   padding: 1em 0.5em;
   margin-bottom: 40px;
-  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: 400;
   line-height: 19.5px;
@@ -138,7 +134,6 @@ header.active {
 }
 
 .info-p {
-  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: 900;
   line-height: 19.5px;
@@ -147,8 +142,8 @@ header.active {
 }
 
 .info-p b {
-  color: var(--orange-color);
   font-weight: 900;
+  text-decoration: underline;
 }
 
 .burger-btn {
@@ -200,9 +195,8 @@ header.active {
 
 .title-h2 {
   min-width: 100%;
-  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: normal;
   text-align: center;
   color: var(--dark-color);
@@ -272,6 +266,11 @@ header.active {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: var(--orange-color);
+}
+
+.concerts:hover {
+  background-color: #555;
 }
 
 .concerts-a {
@@ -283,9 +282,8 @@ header.active {
 }
 
 .concerts-img {
-  max-width: 90%;
+  max-width: 100%;
   max-height: 100%;
-  background-color: var(--dark-color);
   mix-blend-mode: multiply;
 }
 
@@ -293,12 +291,10 @@ header.active {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  filter: blur(0);
   color: #fff;
   font-weight: 900;
-  border: 4px solid var(--orange-color);
   padding: 0.5em 0;
-  box-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color), 0 0 20px var(--orange-color);
+  border: 4px solid var(--orange-color);
   text-shadow: 0 0 20px var(--orange-color), 0 0  20px var(--orange-color);
 }
 
@@ -368,12 +364,35 @@ start of copyrigth section */
 
   header {
     position: static;
-    width: 80%;
-    padding: 24px 0;
+    width: 100%;
+    padding: 0 0 24px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     transition: none;
+  }
+
+  #media {
+    width: 100%;
+    background: var(--dark-color);
+    padding: 12px 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .media-ul {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .media-a {
+    color: #fff;
+    text-decoration: none;
   }
 
   .navbar.desktop-v {
@@ -405,8 +424,15 @@ start of copyrigth section */
     padding: 0.3em 0.2em;
   }
 
+  .home-section {
+    height: 80vh;
+    align-items: center;
+    background-position: center;
+  }
+
   .home-wrapper {
-    width: 70%;
+    width: 50%;
+    align-items: center;
   }
 
   .home-h1,
@@ -426,6 +452,10 @@ start of copyrigth section */
 
   .concerts:last-child a h2 {
     left: 71.5%;
+  }
+
+  .logo {
+    width: 500px;
   }
 
   .copyR-section {

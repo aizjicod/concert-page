@@ -477,7 +477,7 @@ start of program section */
   }
 
   .card-artist:nth-child(even) img:nth-child(2) {
-    left: 54%;
+    left: 52%;
   }
 
   .card-content h2 {

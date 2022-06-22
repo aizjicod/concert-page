@@ -228,7 +228,7 @@ start of program section */
 
 .artist-wrapper {
   width: 90%;
-  padding: 80px 0;
+  padding: 80px 0 40px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -284,13 +284,6 @@ start of program section */
   font-size: 1em;
   font-weight: 700;
   color: var(--orange-color);
-}
-
-.btn-artist {
-  width: 100%;
-  background: inherit;
-  border: 2px solid var(--grey-color);
-  padding: 1em 0.5em;
 }
 
 .patrons-section {
@@ -488,6 +481,35 @@ start of program section */
     display: flex;
   }
 
+  /* end of paotrons section
+start of copyrigth section */
+
+  .copyR-section {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-color);
+  }
+
+  .copyR-wrapper {
+    width: 70%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    gap: 15px;
+  }
+
+  .copy-img {
+    width: 40%;
+    border-radius: 15px;
+  }
+
+  .copy-content {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+  }
   .mobile-v {
     display: none;
   }

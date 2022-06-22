@@ -336,6 +336,27 @@ header.active {
   justify-content: center;
 }
 
+/* end of paotrons section
+start of copyrigth section */
+
+.copyR-section {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.copyR-wrapper {
+  width: 90%;
+  display: flex;
+  align-content: center;
+  gap: 15px;
+}
+
+.copy-img {
+  width: 40%;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-v {
     display: none;
@@ -407,7 +428,24 @@ header.active {
     left: 71.5%;
   }
 
-  /* .patrons-wrapper {
-    width: 90%;
-  } */
+  .copyR-section {
+    background: var(--dark-color);
+  }
+
+  .copyR-wrapper {
+    width: 70%;
+    justify-content: space-around;
+  }
+
+  .copy-img {
+    background-color:  #5a5d74;
+    border-radius: 15px;
+  }
+
+  .copy-content {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: #fff;
+  }
 }

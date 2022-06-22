@@ -6,7 +6,6 @@
 ## Built With
 
 - HTMl, CSS3 and Java Script
-- boostrap
 
 
 ## Live Demo
